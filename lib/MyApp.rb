@@ -7,7 +7,16 @@ get "/" do
 end
 
 post "/registro" do
-	erb :info
+	@username= params[:username]
+	@nombre= params[:nombre]
+	@apaterno= params[:apaterno]
+	@amaterno= params[:amaterno]
+
+	unless @username.empty? or @nombre.empty?  or @apaterno.empty?  or @amaterno.empty?  
+		erb :info 
+	else
+		erb :index
+	end
 end
 
 get "/contact" do

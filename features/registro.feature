@@ -15,3 +15,12 @@ Scenario: Enviar el formulario de registro
 	And I fill in "amaterno" with "Mori"
 	When I press "Enviar"
 	Then I should see "Registrado"
+
+Scenario: Enviar el formulario de registro con datos e blanco
+	Given I am on formulario de registro
+	And I fill in "username" with ""
+	And I fill in "nombre" with "dsadsa"
+	And I fill in "apaterno" with ""
+	And I fill in "amaterno" with ""
+	When I press "Enviar"
+	Then I should see "RegistroUser"
