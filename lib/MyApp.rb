@@ -6,8 +6,8 @@ get "/" do
 	erb :index
 end
 
-get "/registro" do
-	erb :about
+post "/registro" do
+	erb :info
 end
 
 get "/contact" do

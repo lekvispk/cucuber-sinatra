@@ -16,6 +16,9 @@ module NavigationHelpers
     when /formulario de contacto/
       '/contacto'
 
+    when /formulario de registro/
+      '/'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

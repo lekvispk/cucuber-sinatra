@@ -6,3 +6,12 @@ Feature: Formulario de registro
 Scenario: Ingresar al formulario de registro
 	Given I am on the home page
 	Then I should see "RegistroUser"
+
+Scenario: Enviar el formulario de registro
+	Given I am on formulario de registro
+	And I fill in "username" with "ecampos"
+	And I fill in "nombre" with "Elvis"
+	And I fill in "apaterno" with "Campos"
+	And I fill in "amaterno" with "Mori"
+	When I press "Enviar"
+	Then I should see "Registrado"
