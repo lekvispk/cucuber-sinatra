@@ -4,6 +4,5 @@ Feature: Formulario de registro
 	I want almacenar los datos del nuevo usuario
 
 Scenario: Ingresar al formulario de registro
-	Given yo estoy en la pagina de inicio
-	When yo ingreso a la pagina registro
-	Then yo deberia ver el formulario
+	Given I am on the home page
+	Then I should see "RegistroUser"
